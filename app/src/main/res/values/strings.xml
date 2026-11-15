@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Appareal</string>
+    <string name="product_image">Product image</string>
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="delete_item">Delete item</string>
+    <string name="nothing_here">Nothing here yet</string>
+    <string name="id_image">Valid ID image</string>
 </resources>
