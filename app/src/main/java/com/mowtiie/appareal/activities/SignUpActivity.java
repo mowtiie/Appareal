@@ -39,7 +39,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         binding.ddIdType.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, Data.ID_TYPES));
         binding.btnPickId.setOnClickListener(v -> pickImage.launch("image/*"));
-        binding.btnGoLogin.setOnClickListener(v -> startActivity(new Intent(this, LoginActivity.class)));
+        binding.btnGoLogin.setOnClickListener(v -> finish());
         binding.btnSignUp.setOnClickListener(v -> signUp());
     }
 
@@ -114,6 +114,6 @@ public class SignUpActivity extends AppCompatActivity {
 
         Data.insertUser(this, username, password, last, first, mi.toUpperCase(), address, contact, idType, idImagePath);
         Toast.makeText(this, "Account created. Please log in.", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(this, LoginActivity.class));
+        finish();
     }
 }

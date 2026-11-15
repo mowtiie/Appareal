@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.btnGoSignUp.setOnClickListener(v -> startActivity(new Intent(this, SignUpActivity.class)));
         binding.btnLogin.setOnClickListener(v -> {
             binding.tilUsername.setError(null);
             binding.tilPassword.setError(null);
