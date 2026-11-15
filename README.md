@@ -12,9 +12,9 @@ Appareal is the competition project built for the Tagisan ng Talino 2024 - 2025 
 
 | | |
 |---|---|
-| Team Name | ERRAnds |
-| Result | 🏆 1st Place (Champion), Tagisan ng Talino 2024 - 2025 Code Fest |
-| Team Members | [Vrixzandro Eliponga](https://github.com/mowtiie), [Michael Tagle](https://github.com/ImmunoCapacity), [Christine Jane Lapuz](https://github.com/chrstnjn) |
+| Team Name | Yukinians |
+| Result | 1st Place (Champion), Tagisan ng Talino 2024 - 2025 Code Fest |
+| Team Members | [Vrixzandro Eliponga](https://github.com/mowtiie), [Michael Tagle](https://github.com/ImmunoCapacity), [Xean Stephen Atatado](https://github.com/771Folders) |
 
 ## Features
 
