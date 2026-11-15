@@ -40,6 +40,8 @@ public class OrderTrackingActivity extends AppCompatActivity {
             int price = Integer.parseInt(i[1]);
             int qty = Integer.parseInt(i[2]);
             MaterialTextView tv = new MaterialTextView(this);
+            tv.setTextSize(16);
+            tv.setPadding(0, 6, 0, 6);
             tv.setText(qty + " x " + i[0] + "  " + Data.money(qty * price));
             binding.llItems.addView(tv);
         }
@@ -59,6 +61,8 @@ public class OrderTrackingActivity extends AppCompatActivity {
         binding.llSteps.removeAllViews();
         for (int s = 0; s < STEPS.length; s++) {
             MaterialTextView tv = new MaterialTextView(this);
+            tv.setTextSize(16);
+            tv.setPadding(0, 6, 0, 6);
             tv.setTextAppearance(titleStyle);
             tv.setText((s <= current ? "●  " : "○  ") + STEPS[s]);
             tv.setTextColor(s <= current ? done : muted);

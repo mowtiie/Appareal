@@ -88,8 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="Price"
-            app:helperText="Whole number above 0">
+            android:hint="Price">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPrice"
@@ -104,8 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:hint="Quantity in stock"
-            app:helperText="Whole number, 0 or more">
+            android:hint="Quantity in stock">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etStock"

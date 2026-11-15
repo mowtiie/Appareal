@@ -75,8 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:hint="Order status"
-                app:helperText="Choose the new status">
+                android:hint="Order status">
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/ddStatus"
@@ -91,8 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Estimated delivery date"
-                android:visibility="gone"
-                app:helperText="Today or later">
+                android:visibility="gone">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etEta"

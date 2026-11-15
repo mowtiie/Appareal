@@ -10,6 +10,9 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.google.android.material.badge.BadgeDrawable;
+import com.google.android.material.badge.BadgeUtils;
+import com.google.android.material.badge.ExperimentalBadgeUtils;
 import com.mowtiie.appareal.R;
 import com.mowtiie.appareal.adapters.GenericAdapter;
 import com.mowtiie.appareal.data.Data;
@@ -21,14 +24,20 @@ public class CustomerHomeActivity extends AppCompatActivity {
 
     private ActivityCustomerHomeBinding binding;
     private GenericAdapter<String[]> adapter;
+    private BadgeDrawable cartBadge;
 
     @Override
+    @ExperimentalBadgeUtils
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         binding = ActivityCustomerHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        cartBadge = BadgeDrawable.create(this);
+        cartBadge.setVisible(false);
+        binding.toolbar.post(() ->
+                BadgeUtils.attachBadgeDrawable(cartBadge, binding.toolbar, R.id.action_cart));
         binding.toolbar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.action_cart) {
                 startActivity(new Intent(this, CartActivity.class));
@@ -77,7 +86,9 @@ public class CustomerHomeActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         load();
-        binding.toolbar.getMenu().findItem(R.id.action_cart).setTitle("Cart (" + Data.cartCount(this) + ")");
+        int count = Data.cartCount(this);
+        cartBadge.setNumber(count);
+        cartBadge.setVisible(count > 0);
     }
 
     private void load() {

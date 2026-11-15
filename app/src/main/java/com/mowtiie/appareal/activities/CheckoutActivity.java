@@ -49,6 +49,8 @@ public class CheckoutActivity extends AppCompatActivity {
             int qty = Integer.parseInt(r[4]);
             int price = Integer.parseInt(r[3]);
             MaterialTextView tv = new MaterialTextView(this);
+            tv.setTextSize(16);
+            tv.setPadding(0, 6, 0, 6);
             tv.setText(qty + " x " + r[2] + "  " + Data.money(qty * price));
             binding.llItems.addView(tv);
         }

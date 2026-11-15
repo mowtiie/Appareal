@@ -32,8 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="Last name"
-            app:helperText="Letters, spaces, hyphens and apostrophes">
+            android:hint="Last name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etLastName"
@@ -48,8 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="First name"
-            app:helperText="Letters, spaces, hyphens and apostrophes">
+            android:hint="First name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etFirstName"
@@ -64,10 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="Middle initial (optional)"
-            app:counterEnabled="true"
-            app:counterMaxLength="1"
-            app:helperText="One letter">
+            android:hint="Middle initial (optional)">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etMiddleInitial"
@@ -83,8 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="Delivery address"
-            app:helperText="At least 10 characters">
+            android:hint="Delivery address">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etAddress"
@@ -115,8 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="Valid ID type"
-            app:helperText="Choose one">
+            android:hint="Valid ID type">
 
             <com.google.android.material.textfield.MaterialAutoCompleteTextView
                 android:id="@+id/ddIdType"
@@ -199,8 +192,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:hint="Confirm password"
-            app:endIconMode="password_toggle"
-            app:helperText="Re-enter your password">
+            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etConfirm"

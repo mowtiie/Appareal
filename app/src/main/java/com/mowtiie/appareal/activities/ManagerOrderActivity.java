@@ -48,6 +48,8 @@ public class ManagerOrderActivity extends AppCompatActivity {
             int price = Integer.parseInt(i[1]);
             int qty = Integer.parseInt(i[2]);
             MaterialTextView tv = new MaterialTextView(this);
+            tv.setTextSize(16);
+            tv.setPadding(0, 6, 0, 6);
             tv.setText(qty + " x " + i[0] + "  " + Data.money(qty * price));
             binding.llItems.addView(tv);
         }
